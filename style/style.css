@@ -1,0 +1,229 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+form,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0px;
+  padding: 0px;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: normal 100% Arial;
+  color: #333333;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+.p_css3 {
+  -webkit-transition: 1s ease all;
+}
+/*直接修改这个参数即可快速替换皮肤*/
+.p_tac {
+  text-align: center;
+}
+.p_fl {
+  float: left;
+}
+#afui {
+  /* 侧边菜单 */
+}
+#afui #header {
+  background: #000000;
+  border-bottom: none;
+}
+#afui #header h1 {
+  top: 0px;
+}
+#afui #header .hd_logo {
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  width: 105px;
+  margin-left: -52px;
+  top: 5px;
+}
+#afui #header .menuButton {
+  float: left;
+  width: 44px;
+  height: 44px;
+  top: 0px;
+  right: 0px;
+}
+#afui #header .menuButton:after {
+  top: 14px;
+  left: 12px;
+  width: 20px;
+}
+#afui #header .menuButton.pressed {
+  background: #FF7F00 !important;
+}
+#afui #content {
+  background: #fff;
+  background-size: 100% 100%;
+}
+#afui #aside_menu,
+#afui #menu.tabletMenu {
+  background: #ccc;
+  border: none;
+}
+#afui #aside_menu .emptys,
+#afui #menu.tabletMenu .emptys {
+  height: 47px;
+}
+#afui #aside_menu .list li,
+#afui #menu.tabletMenu .list li {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #dddddd;
+  font-size: 1.5em;
+  padding: 0px;
+  color:#000;
+}
+#afui #aside_menu .list li a,
+#afui #menu.tabletMenu .list li a {
+  color: #ff6600;
+  margin: 0px;
+  padding: 0.5em;
+}
+#afui #aside_menu .list li a.pressed,
+#afui #menu.tabletMenu .list li a.pressed {
+  background: #dd0000;
+  color: #FFF;
+}
+#afui #navbar {
+  background: #000000;
+  border-top: none;
+  padding: 0px;
+}
+#afui .afScrollbar {
+  opacity: .3;
+}
+#afui #menu .list li a {
+  font-size: 0.8em;
+}
+#afui #menu .list li a:after {
+  display: none;
+}
+#afui #menu .list li:first-child {
+  border-top: none;
+  box-shadow: inset 0px 0px 0px transparent !important;
+  -webkit-box-shadow: inset 0px 0px 0px transparent !important;
+}
+/*设置按钮*/
+#afui .set_button {
+  float: right;
+  display: block;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  position: relative;
+}
+#afui .set_button:before {
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  font-size: 25px;
+}
+#afui .set_button.pressed {
+  background: #FF7F00 !important;
+}
+/*菜单栏*/
+#afui .login_tit {
+  height: 44px;
+  background: #ec5e00;
+  margin: 0px;
+}
+#afui .icon_logo {
+  display: block;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: url(../images/logo2.png) center no-repeat;
+  background-size: 70% 70%;
+  margin: 0px 5px;
+}
+#afui .login_text {
+  padding-top: 2px;
+}
+#afui .login_text p {
+  height: 18px;
+  line-height: 18px;
+  font-size: 1em;
+  padding: 0px;
+  margin: 0px;
+  color: #fad700;
+}
+/*通用弹出框样式*/
+#afui #pops {
+  border: none;
+  background: #000000;
+}
+#afui #pops header {
+  text-align: center;
+  color: #FFF;
+}
+#afui #pops > div {
+  color: #FFF;
+  text-align: center;
+}
+#afui #pops footer .button {
+  border: none !important;
+}
+#afui #pops footer .button.pressed {
+  background: #dd0000;
+  color: #FFF;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+
+	<link rel="stylesheet" href="libs/css/icons.css">
+  <link rel="stylesheet" href="libs/css/af.ui.css">
+    
+  <!-- 自写样式，最好使用 less 修改，可以快速修改皮肤颜色 -->
+	<link rel="stylesheet" href="style/style.css">
+
+</head>
+
+
+<body>
+
+	<div id="afui">
+	
+		<div id="splashscreen" class='ui-loader heavy'>
+			<br>
+            App Framework
+            <br>
+            <br>
+            <span class='ui-icon ui-icon-loading spin'></span>
+            <br>
+            <h1>Starting app</h1>
+
+        </div>
+
+		<div id="header">
+            <a href="#" onclick="$.ui.toggleSideMenu()" class="menuButton"></a>
+			<h1></h1>
+		</div>
+		
+		<div id="content">
+			<!-- 
+				selected="true" 			默认页面
+				data-title="string"			header 部分显示的标题（需要存在h1标签）
+				data-header="id"			通过dom的id调用不同的 header ，注意使用<header></header>
+				data-footer="id"			通过dom的id调用不同的 footer ，注意使用<footer></footer>
+				data-nav="id"				通过dom的id调用不同的 nav(侧边拦) 
+				data-tab="id"				这里的 id 为  navbar 子元素 的id ，能够控制对应的高亮
+				data-defer="xx.html"		加载外部页面，便于管理project
+				data-load="function"		页面载入时触发的函数
+				data-unload="function"		页面卸载时触发的函数
+			 -->
+			<div id="main" class="panel" selected="true" data-title="main" data-header="" data-footer="" data-defer="" data-tab="" data-nav="" data-load="" data-unload="">
+        <ul class="list">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+        </ul>
+			</div>
+
+		</div>
+        
+        <!-- footer -->
+		<div id="navbar">
+    
+    </div>
+        
+        <!-- 左侧边栏 -->
+		<nav>
+      <h3>左侧边栏</h3>
+		</nav>
+        
+        <!-- 右侧边栏 -->
+		<aside>
+      <h3>右侧边栏</h3>
+		</aside>
+
+	</div>
+  
+  
+  <!-- phonegap依赖，不使用请删除 -->
+	<script src="cordova.js"></script>
+  
+  <script src="libs/jquery-2.0.3.js"></script>
+  <script src="libs/ui/jq.appframework.min.js"></script>
+	<script src="libs/ui/af.ui.jquery.js"></script>
+  
+  <!-- 可选，滑动划出菜单 可删，如需定制可自己重写-->
+	<script src="libs/plugins/af.slidemenu.js"></script>
+  <!-- 桌面浏览器模拟触摸 不需要在桌面浏览器调试的话可删 -->
+	<script src="libs/plugins/af.desktopBrowsers.js"></script>
+  
+  <!-- af初始化 -->
+	<script src="libs/af_init.js"></script>
+  
+</body>
+</html>
