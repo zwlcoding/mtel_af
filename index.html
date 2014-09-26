@@ -13,6 +13,23 @@
   	<link rel="stylesheet" href="libs/css/af.ui.css">
     
 	<link rel="stylesheet" href="style/style.css">
+	
+	  <!-- phonegap依赖，不使用请删除 -->
+	<script src="cordova.js"></script>
+  
+  	<script src="libs/jquery-2.0.3.js"></script>
+  	<script src="libs/ui/jq.appframework.js"></script>
+  	<script src="libs/ui/appframework.ui.js"></script>
+  
+	<!-- 可选，滑动划出菜单 可删，如需定制可自己重写-->
+	<script src="libs/plugins/af.slidemenu.js"></script>
+	
+	<!-- 桌面浏览器模拟触摸 不需要在桌面浏览器调试的话可删 -->
+	<script src="libs/plugins/af.desktopBrowsers.js"></script>
+  
+	<!-- af初始化 -->
+	<script src="libs/af_init.js"></script>
+	
 
 </head>
 
@@ -50,16 +67,16 @@
 				data-unload="function"		页面卸载时触发的函数
 			 -->
 			<div id="main" class="panel" selected="true" data-title="main" data-header="" data-footer="" data-defer="" data-tab="" data-nav="" data-load="" data-unload="">
-        <ul class="list">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-        </ul>
+				<ul class="list">
+				  <li>1</li>
+				  <li>2</li>
+				  <li>3</li>
+				  <li>4</li>
+				  <li>5</li>
+				  <li>6</li>
+				  <li>7</li>
+				  <li>8</li>
+				</ul>
 			</div>
 
 		</div>
@@ -67,35 +84,19 @@
         <!-- footer -->
 		<div id="navbar">
     
-    </div>
+		</div>
         
         <!-- 左侧边栏 -->
 		<nav>
-      <h3>左侧边栏</h3>
+			<h3>左侧边栏</h3>
 		</nav>
         
         <!-- 右侧边栏 -->
 		<aside>
-      <h3>右侧边栏</h3>
+			<h3>右侧边栏</h3>
 		</aside>
 
 	</div>
-  
-  
-  <!-- phonegap依赖，不使用请删除 -->
-	<script src="cordova.js"></script>
-  
-  	<script src="libs/jquery-2.0.3.js"></script>
-  	<script src="libs/ui/jq.appframework.js"></script>
-  	<script src="libs/ui/appframework.ui.js"></script>
-  
-  <!-- 可选，滑动划出菜单 可删，如需定制可自己重写-->
-	<script src="libs/plugins/af.slidemenu.js"></script>
-  <!-- 桌面浏览器模拟触摸 不需要在桌面浏览器调试的话可删 -->
-	<script src="libs/plugins/af.desktopBrowsers.js"></script>
-  
-  <!-- af初始化 -->
-	<script src="libs/af_init.js"></script>
-  
+
 </body>
 </html>
